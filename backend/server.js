@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
+app.get('/ping', (req, res) => {
+    res.send('DIVEN SAINI');
+});
+
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
